@@ -6,8 +6,8 @@ You have until 20:00 (105 minutes). "Open browser" but NO COMMUNICATION between 
 Using following [Discworld Wikipedia page](http://wiki.lspace.org/mediawiki/List_of_Pratchett_characters):
 
 1. Scrape urls linking to the (individual wikipedia pages of) Major Discworld characters that are related to `Ankh-Morpork` and `The Watch`.
-(Hint: 
-`lis = soup.find('span',{'id':'Unseen_University_and_the_Wizards'}).parent.previous.previous.parent.parent.parent.find_all('li')`)
+
+(Hint: `lis = soup.find('span',{'id':'Unseen_University_and_the_Wizards'}).parent.previous.previous.parent.parent.parent.find_all('li')`)
 
 2. Then, get DataFrame linking the particular character with the book he is appearing in. DataFrame should contain two columns: 
     * Name of the book (`book`)
